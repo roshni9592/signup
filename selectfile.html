@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Choose file</title>
+    <style>
+    *{
+        box-sizing: border-box;
+    }
+
+body{
+        background-image: url(stars.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    p{
+        font-weight: bold;
+        font-size: 40pt;
+        font-family: calibri;
+        color:#fff;
+        text-align: center;
+    }
+    .container{
+        position: relative;
+         height:200px;
+        width:350px;
+        background-color:#fff;
+        align-items: center;
+        border-radius: 8px;
+        box-shadow: 2px 0 15px dimgrey;
+        margin:30px auto;
+        margin-top: 5%;
+        padding-top: 20px;  
+    }
+    label {
+        
+        font-size: 20pt;
+        font-family: Calibri, 'Trebuchet MS';
+        font-weight: bold;
+        padding-left: 35px;
+        display: inline;
+    }
+  input[type="file"]{
+        height: 45px;
+        width: 300px;
+        background-color: darkorange;
+        border-radius: 4px;
+        padding-top: 12px;
+        padding-bottom: 7px;
+        margin: 5px 23px 20px;
+        cursor: pointer;
+        padding-left: 15px;
+        font-weight: bold;
+    }
+input.btn{
+  display: flex;
+  cursor: pointer;
+  padding: 10px 25px;
+  margin-left: 25px;
+  font-size: 14pt;
+  font-family: calibri;
+  color: #000;
+  background-color: darkorange;
+  border:none;
+  outline:none;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: bold;
+}
+
+input.btn:hover{
+    color:black;
+}
+
+    </style>
+    </head>
+    <body>
+        <p>File Uploader design with HTML/Css.</p>
+        <div class="container">
+            <form>
+            <label for="file">Choose a file:</label>
+            <div class="input-box">
+            <input accept=".jpg, .png, .pdf,.avif, .jpeg, .gif" type="file" required>
+        </div>
+        <input type="submit" value="send" class="btn">
+        </div>
+    </form>
+    </body>
+</html>
